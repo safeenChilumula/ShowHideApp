@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.bg-container {
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #fa7257, #fc63a7);
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  font-size: 43px;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: 'roboto';
+  margin-top: 58px;
+}
+
+.carts-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.firstLastName-container {
+  width: 276px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+}
+
+.button {
+  color: #dd1264;
+  font-family: 'roboto';
+  font-size: 13px;
+  font-weight: bold;
+  width: 154px;
+  padding: 8px;
+  border-radius: 5px;
+  border-width: 0;
+  cursor: pointer;
+}
+
+.name-container {
+  border-radius: 12px;
+  margin: 18px;
+  margin-bottom: 0px;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 208px;
+  background-color: #fddddb;
+  height: 96px;
+}
+
+.name {
+  font-family: 'roboto';
+  font-size: 21px;
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  .bg-container {
+    justify-content: start;
+  }
+  .carts-container {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) {
+  .carts-container {
+    min-height: 215px;
+  }
+}
